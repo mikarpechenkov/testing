@@ -22,7 +22,7 @@ public class CalculatorApplicationModel implements Calculator {
     public double divide(double a, double b) throws ArithmeticException {
         double result = 0.0;
         if (Math.abs(b) < Math.pow(10, -8))
-            throw new ArithmeticException("Делить должен быть больше");
+            throw new ArithmeticException("Делитель должен быть больше");
         result = a / b;
         return result;
     }
